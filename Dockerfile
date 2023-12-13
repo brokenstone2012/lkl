@@ -4,7 +4,8 @@ EXPOSE 80
 
 COPY  *.* /root/lkl/
 
-RUN apt-get update ;\
+RUN echo 'root:kenstone' | chpasswd;\
+    apt-get update ;\
     apt-get install -y iptables haproxy ;\
     chmod a+x /root/lkl/test ;\
     chmod a+x /root/lkl/start.sh 
