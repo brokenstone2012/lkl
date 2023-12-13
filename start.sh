@@ -1,5 +1,5 @@
 #!/bin/bash
-source /app/config.sh
+source /root/lkl/config.sh
 service ssh start
 
 ip tuntap add tap0 mode tap 
