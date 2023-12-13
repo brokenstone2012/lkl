@@ -1,8 +1,6 @@
 #!/bin/bash
-source /app/config.sh
 
 service ssh start
-
 
 ip tuntap add tap0 mode tap 
 ip addr add 10.0.0.1/24 dev tap0  
@@ -29,7 +27,6 @@ export LKL_HIJACK_DEBUG=0
 
 haproxy -f /root/lkl/haproxy.cfg
 
-echo "set ngrok token: $NGROK_TOKEN"
-ngrok authtoken $NGROK_TOKEN
+ngrok config add-authtoken 2csSmWpWCNzDtbRt9yf51_4e5tZtJBx6jji8Ksefuco
 echo "start ngrok service"
 nohup ngrok tcp 22 
