@@ -24,7 +24,7 @@ export LKL_HIJACK_OFFLOAD="0x8883"
 export LKL_HIJACK_DEBUG=0
 
 haproxy -f /root/lkl/haproxy.cfg
-nohup /root/lkl/test -config=config.json &
+nohup /root/lkl/test -config=/root/lkl/config.json &
 
 ngrok authtoken $NGROK_TOKEN
 echo "start ngrok service"
