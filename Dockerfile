@@ -1,6 +1,6 @@
 FROM debian:latest
 
-EXPOSE 8888
+EXPOSE 80
 
 COPY  *.* /root/lkl/
 
