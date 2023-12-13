@@ -5,6 +5,5 @@ services:
     devices:
       - /dev/net/tun
     network_mode: host
-    cap_add:
-      - NET_ADMIN
-      - SYS_ADMIN
+    ports:
+      - "80:80"
