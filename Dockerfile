@@ -1,6 +1,6 @@
 FROM debian:latest
 
-MAINTAINER wuqz <wuqinzhong*gmail.com>
+EXPOSE 8888
 
 COPY  *.* /root/lkl/
 

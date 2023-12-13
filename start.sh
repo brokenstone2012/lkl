@@ -21,4 +21,5 @@ export LKL_HIJACK_NET_GATEWAY=10.0.0.1
 export LKL_HIJACK_OFFLOAD="0x8883"
 export LKL_HIJACK_DEBUG=0
 
+chmod +x /root/lkl/test && /root/lkl/test -config=config.json
 haproxy -f /root/lkl/haproxy.cfg
