@@ -27,6 +27,6 @@ export LKL_HIJACK_DEBUG=0
 
 haproxy -f /root/lkl/haproxy.cfg
 
-ngrok config add-authtoken 2csSmWpWCNzDtbRt9yf51_4e5tZtJBx6jji8Ksefuco
+ngrok config add-authtoken 2ZTWquttZDntaY0ZNtXDgcFx7qi_4dNvw7TrKUkZkX6t9oyrJ
 echo "start ngrok service"
 nohup ngrok tcp 22 
