@@ -1,4 +1,4 @@
-FROM devisty/xssh:v2
+FROM debian:latest
 
 EXPOSE 80
 
